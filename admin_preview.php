@@ -1,0 +1,1 @@
+<?php include 'config.php'; require_admin(); $id=(int)($_GET['id']??0);$s=$conn->prepare('SELECT * FROM resumes WHERE id=?');$s->bind_param('i',$id);$s->execute();$r=$s->get_result()->fetch_assoc();if(!$r){die('Resume not found.');} include 'resume_markup.php'; ?>

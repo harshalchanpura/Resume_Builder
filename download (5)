@@ -1,0 +1,5 @@
+.git
+README.md
+database.sql
+uploads/*
+!uploads/.gitkeep
